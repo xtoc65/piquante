@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*'); //l'origine qui a le droit d'acceder a n otre API est pour tout le monde 
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'); //Utilisation d'utiliser certain en-têê
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'); //Utilisation d'utiliser certain en-têtê
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS')//Uilisation de certaine méthode 
     next(); // Pour passer l'execution au middleware d'apres 
   });
